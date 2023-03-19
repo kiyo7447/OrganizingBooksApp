@@ -15,7 +15,8 @@ namespace BookFileOrganizer
 				.WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
 				.CreateLogger();
 
-			string defaultInputDirectory = @"C:\Users\kiyot\OneDrive\Books\SourceDirectory";
+			//string defaultInputDirectory = @"C:\Users\kiyot\OneDrive\Books\SourceDirectory";
+			string defaultInputDirectory = @"C:\Users\kiyot\OneDrive\Books\Upload\26";
 			string outputDirectory = @"C:\Users\kiyot\OneDrive\Books\まんが";
 
 			string inputDirectory = args.Length > 0 ? args[0] : defaultInputDirectory;
@@ -42,7 +43,7 @@ namespace BookFileOrganizer
 			//Regex regex = new Regex(@"^(.+?)(_|\s)v?(\d+([\-sb]\d*)?(-\d{2,})?).*\.(zip|avif|rar)$", RegexOptions.IgnoreCase);
 			//Regex regex = new Regex(@"^(.+?)(_|\s)v?(\d+([\-sb]\d*)?(-\d{2,})?|ch\d+).*\.(zip|avif|rar)$", RegexOptions.IgnoreCase);
 
-			Regex regex = new Regex(@"^(.+?)(_|\s)(v|ch|Vol.)?(\d{2}(s|b)?)(\-\d{2})?(s|b|s_fix|fix|s_b|sf|e|_fix|AVIF|s fix| fix|\+a)*\.(zip|avif|rar)$", RegexOptions.IgnoreCase);
+			Regex regex = new Regex(@"^(.+?)(_|\s)(v|ch|Vol.)?(\d{2}(s|b)?)(\-\d{2})?(s|b|s_fix|fix|s_b|sf|e|_fix|AVIF|s fix| fix|\+a|_avif)*\.(zip|avif|rar)$", RegexOptions.IgnoreCase);
 			foreach (string filePath in filePaths)
 			{
 				string fileName = Path.GetFileName(filePath);
