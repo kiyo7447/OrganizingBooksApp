@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookFileOrganizer", "BookFi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileMover", "FileMover\FileMover.csproj", "{025F3D72-99E1-442A-8715-A3A39B61E45A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileNameConverter", "FileNameConverter\FileNameConverter.csproj", "{61ABB4E5-2CD6-4F67-9BD1-2E0267FF6A1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileNameConverter", "FileNameConverter\FileNameConverter.csproj", "{61ABB4E5-2CD6-4F67-9BD1-2E0267FF6A1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCrawler", "WebCrawler\WebCrawler.csproj", "{DF1DD932-C38E-484C-9D11-583B8C108358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCrawler_ParseFile", "WebCrawler_ParseFile\WebCrawler_ParseFile.csproj", "{E38A9C23-0BB4-445D-B657-30E3E1D4DDC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{61ABB4E5-2CD6-4F67-9BD1-2E0267FF6A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61ABB4E5-2CD6-4F67-9BD1-2E0267FF6A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61ABB4E5-2CD6-4F67-9BD1-2E0267FF6A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1DD932-C38E-484C-9D11-583B8C108358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1DD932-C38E-484C-9D11-583B8C108358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1DD932-C38E-484C-9D11-583B8C108358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1DD932-C38E-484C-9D11-583B8C108358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E38A9C23-0BB4-445D-B657-30E3E1D4DDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E38A9C23-0BB4-445D-B657-30E3E1D4DDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E38A9C23-0BB4-445D-B657-30E3E1D4DDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E38A9C23-0BB4-445D-B657-30E3E1D4DDC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
